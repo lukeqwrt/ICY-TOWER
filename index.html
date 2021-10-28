@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICY-TOWER</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome -->
+    
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav-container">
+            <nav>
+                <div class="logo">
+                    <h3>Logo</h3>
+                </div>
+
+                <div class="bars">
+                    <i id="trigger-bars" class="fas fa-bars"></i>
+                </div>
+                <div class="mobile">
+                    <ul class="list">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">MARKETPLACE</a></li>
+                        <li><a href="">WIKI</a></li>
+                        <li><a href="">INVENTORY</a></li>
+                        <li><a href="">SHOP</a></li>
+                        <li><a href="">SOCIAL</a></li>
+                    </ul>
+    
+                    <ul class="auth">
+                        <li class="logged-in" style="display: none;">
+                            <a class="modal-trigger nav-link text-white" href="" data-toggle="modal" data-target="#modal-account">Account</a>
+                        </li>
+                        <li class="logged-in" style="display: none;">
+                          <a class="" href="" id="logout">Logout</a>
+                        </li>
+                        <li class="logged-out">
+                          <a class="modal-trigger" href="" data-toggle="modal" data-target="#loginmodal">LOGIN</a>
+                        </li>
+                        <li class="logged-out">
+                          <a class="modal-trigger" href="" data-toggle="modal" data-target="#modal-signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+         
+            </nav>
+        </div>
+
+        <div class="landing">
+            <div class="landing-content">
+                <img src="./img/download.png" alt="">
+                <button>PLAY GAME</button>
+            </div>
+        </div>
+        <div class="container-fluid links-section">
+            <div class="quick-links container">
+                <ul class="links">
+                    <li><a href=""><img src="./img/poocoinx.png" alt=""></a></li>
+                    <li><a href=""><img src="./img/coinmarketx.png" alt=""></a></li>
+                    <li><a href=""><img src="./img/binancex.png" alt=""></a></li>
+                    <li><a href=""><img src="./img/coingeckox.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid con">
+            <div class="contract-section container">
+                    <div class="contract">
+                        <div class="key">
+                            <h3>Contract</h3>
+                            0x55E00121241d6870324a8e6DFFaabbe2E0359863
+                        </div>
+                    </div>
+                    <div class="market-wrapper">
+                        <button class="marketplace-btn">MARKETPLACE</button>
+                    </div>
+                   
+            </div>
+        </div>
+        <div class="contianer-fluid sec">
+            <div class="container">
+                <div class="features">
+                    <ul class="tabs">
+                        <h3>FEATURES</h3>
+                        <li data-tab-target="#security" class="tab">SECURITY <span></span></li>
+                        <li data-tab-target="#staking" class="tab">STAKING <span></span></li>
+                        <li data-tab-target="#antibots" class="tab">ANTIBOTS AND FARMING <span></span></li>
+                        <li data-tab-target="#bnb" class="tab">NO BNB FEES<span></span></li>
+                        <li data-tab-target="#marketPlace" class="tab">MARKET PLACE <span></span></li>
+                        <li data-tab-target="#playandearn" class="tab">PLAY & EARN <span></span></li>
+                        <li data-tab-target="#pvm" class="tab">PVM & PVP <span></span></li>
+                        <li data-tab-target="#dailyrewards" class="tab">DAILY REWARDS <span></span></li>
+                        <li data-tab-target="#oraclesystem" class="tab">ORACLE SYSTEM <span></span></li>
+         
+                    </ul>
+        
+                    <div class="tab-content">
+                        <div id="security" data-tab-content class="content active">
+                            <h2>SECURITY</h2>
+                            <p>At CoinToFish we care a lot about your safety, so we have designed a unique system to protect you. The website is connected to an external server that constantly monitors suspicious activity on your account and locks your account if necessary to protect it against theft.</p>
+                            <p>We also offer you an extra factor of security by means of an unlock pattern when entering your account.
+                            </p>
+                        </div>
+                        <div id="staking" data-tab-content class="content">
+                            <h2>STAKING</h2>
+                            <p>
+                                We offer a fixed percentage staking system with which you can earn a full x% of what you enter and we will not take any of your earnings. 
+                             </p>
+                        </div>
+                        <div id="antibots" data-tab-content class="content">
+                            <h2>ANTIBOTS</h2>
+                            <p>   
+                                We also include an anti bot system to make the gaming experience the best possible for you.
+                            </p>
+                            <p>
+                                We have carefully calculated all the rewards offered to maximize your winnings and increase the durability of the game.
+                            </p>
+                            <p>
+                                We also think about negative cases, so we have implemented a dynamic rewards system so that the durability of the game is as long as possible and the trade flows smoothly on the marketplace.
+                             </p>
+                        </div>
+                        <div id="bnb" data-tab-content class="content">
+                            <h2>NO BNB FEES</h2>
+                            <p>   
+							You will not have to pay any fee to feed your fish or buy from our store, since everything is bought and done with the local currency
+                        
+                            </p>
+                        </div>
+                        <div id="marketPlace" data-tab-content class="content">
+                            <h2>MARKET PLACE</h2>
+                            <p>   
+							Our team has worked hard to bring you the first real-time marketplace that currently exists in the world of NFTs. So, you will have to hurry if you want to buy an object before someone else.
+                            </p>
+                        </div>
+                        <div id="playandearn" data-tab-content class="content">
+                            <h2>PLAY & EARN</h2>
+                            <p>   
+                                   
+							The game mode is very simple. You will only have to buy an egg, open it and with the fish that comes out start to earn money. Each fish can feed 2 times every 4 hours and will give you a reward for each feeding. 
+                        
+                            </p>
+                        </div>
+                        <div id="pvm" data-tab-content class="content">
+                            <h2>PVM & PVP</h2>
+                            <p>   
+                                   
+							We plan to create the best fighting system you have ever seen in an NFT browser game. With a dynamic fighting system where you can interact and take actions that can decide the course of the battle. 
+                        
+                            </p>
+                        </div>
+                        <div id="dailyrewards" data-tab-content class="content">
+                            <h2>DAILY REWARDS</h2>
+                            <p>   
+                                Every 24 hours a button will be available in your account to claim your daily reward. Do not forget to claim it, maybe something unexpected will happen to you.
+                            </p>
+                        </div>
+                        <div id="oraclesystem" data-tab-content class="content">
+                            <h2>ORACLE SYSTEM</h2>
+                          <p>   
+							The price of all objects, eggs, canes, food ... will be automatically adjusted to the price of the token thanks to our oracle system. 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roadmap container-fluid">
+            <div class="container roadmap-container py-5">
+                <h3>RoadMap</h3>
+     
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="my-card">
+                        <h3>AUGUST - SEPTEMBER</h3>
+                        <ul class="roadmap-list">
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span><p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                         
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="my-card">
+                        <h3>AUGUST - SEPTEMBER</h3>
+                        <ul class="roadmap-list">
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span><p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="my-card">
+                        <h3>AUGUST - SEPTEMBER</h3>
+                        <ul class="roadmap-list">
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span><p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                            <li><span></span> <p>Website and game design conceptualization</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+   
+
+   
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
