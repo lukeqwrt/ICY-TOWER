@@ -12,7 +12,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- fontawesome -->
-    
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
 <!-- font-awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -29,29 +30,32 @@
                     <i id="trigger-bars" class="fas fa-bars"></i>
                 </div>
                 <div class="mobile">
-                    <ul class="list">
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">MARKETPLACE</a></li>
-                        <li><a href="">WIKI</a></li>
-                        <li><a href="">INVENTORY</a></li>
-                        <li><a href="">SHOP</a></li>
-                        <li><a href="">SOCIAL</a></li>
-                    </ul>
-    
-                    <ul class="auth">
-                        <li class="logged-in" style="display: none;">
-                            <a class="modal-trigger nav-link text-white" href="" data-toggle="modal" data-target="#modal-account">Account</a>
-                        </li>
-                        <li class="logged-in" style="display: none;">
-                          <a class="" href="" id="logout">Logout</a>
-                        </li>
-                        <li class="logged-out">
-                          <a class="modal-trigger" href="" data-toggle="modal" data-target="#loginmodal">LOGIN</a>
-                        </li>
-                        <li class="logged-out">
-                          <a class="modal-trigger" href="" data-toggle="modal" data-target="#modal-signup">SIGN UP</a>
-                        </li>
-                    </ul>
+                    <div class="ul-wrapper">
+                        <ul class="myul list">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">MARKETPLACE</a></li>
+                            <li><a href="">WIKI</a></li>
+                            <li><a href="">INVENTORY</a></li>
+                            <li><a href="">SHOP</a></li>
+                            <li><a href="">SOCIAL</a></li>
+                        </ul>
+        
+                        <ul class="myul auth">
+                            <li class="logged-in" style="display: none;">
+                                <a class="modal-trigger nav-link text-white" href="" data-toggle="modal" data-target="#modal-account">Account</a>
+                            </li>
+                            <li class="logged-in" style="display: none;">
+                              <a class="" href="" id="logout">Logout</a>
+                            </li>
+                            <li class="logged-out">
+                              <a class="modal-trigger" href="" data-toggle="modal" data-target="#loginmodal">LOGIN</a>
+                            </li>
+                            <li class="logged-out">
+                              <a class="modal-trigger" href="" data-toggle="modal" data-target="#modal-signup">SIGN UP</a>
+                            </li>
+                        </ul>
+                    </div>
+              
                 </div>
          
             </nav>

@@ -1,15 +1,22 @@
 const bars = document.querySelector("#trigger-bars");
 const mobile = document.querySelector(".mobile")
-
+const list = document.querySelector('.list')
+const auth = document.querySelector('.auth')
 bars.addEventListener("click", () => {
     if(bars.classList.contains('fa-bars')){
         bars.classList.remove('fa-bars')
         bars.classList.add('fa-times')
         mobile.classList.add("show")
+        // const timeline = gsap.timeline({defaults: { duration: 1}})
+        // timeline
+        // .to('.list', { opacity: 1, ease: 'elastic'})
     }else{
         bars.classList.remove('fa-times')
         bars.classList.add('fa-bars')
         mobile.classList.remove("show")
+        // const timeline = gsap.timeline({defaults: { duration: 1}})
+        // timeline
+        // .to('.list', { opacity: 0, ease: 'elastic'})
         // show mobile bar
    
     }
