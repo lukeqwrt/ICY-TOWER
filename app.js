@@ -25,6 +25,8 @@ window.addEventListener('resize', () => {
     if(window.innerWidth > 998){
         if(mobile.classList.contains('show')){
             mobile.classList.remove('show')
+            bars.classList.remove('fa-times')
+            bars.classList.add('fa-bars')
         }
     }
 })

@@ -102,6 +102,13 @@
     transform: translateY(-3px);
 }
 @media screen and (min-width: 988px){
+    .main .nav-container nav .mobile .ul-wrapper{
+        display: grid;
+        grid-auto-flow: column;
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0.3s;
+    }
     .main .nav-container nav .logo{
         margin-right: 100px;
     }
@@ -116,10 +123,12 @@
         display: none;
     }
     .main .nav-container nav .mobile{
+    
         position: unset;
         height: 100%;
         max-width: 940px;
         visibility: visible;
+        opacity: 1;
         background: none;
         width: 100%;
         transition: none;
@@ -127,7 +136,8 @@
         grid-auto-flow: column;
     }
     .main .nav-container nav .mobile ul{
-        display: block;
+        visibility: visible;
+        opacity: 1;
         display: grid;
         grid-auto-flow: column;
     }
