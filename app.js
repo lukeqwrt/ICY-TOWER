@@ -7,6 +7,8 @@ bars.addEventListener("click", () => {
         bars.classList.remove('fa-bars')
         bars.classList.add('fa-times')
         mobile.classList.add("show")
+        
+        mobile.style.transitionDelay = "0"
         // const timeline = gsap.timeline({defaults: { duration: 1}})
         // timeline
         // .to('.list', { opacity: 1, ease: 'elastic'})
@@ -14,6 +16,7 @@ bars.addEventListener("click", () => {
         bars.classList.remove('fa-times')
         bars.classList.add('fa-bars')
         mobile.classList.remove("show")
+        mobile.style.transitionDelay = "0.2s"
         // const timeline = gsap.timeline({defaults: { duration: 1}})
         // timeline
         // .to('.list', { opacity: 0, ease: 'elastic'})
@@ -28,7 +31,10 @@ window.addEventListener('resize', () => {
             bars.classList.remove('fa-times')
             bars.classList.add('fa-bars')
         }
+
+        
     }
+
 })
 
 
